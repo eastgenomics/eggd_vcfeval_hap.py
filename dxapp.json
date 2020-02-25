@@ -46,6 +46,12 @@
       "help": "If the truth set is NA12878, stratification of results will be performed. However this requires the instance type to be upgraded to at least 7GB of RAM and will take longer.",
       "class": "boolean",
       "default": false
+    },
+    {
+      "name": "ref",
+      "label": "Reference file",
+      "help": "Reference file used to generate the vcfs",
+      "class": "file"
     }
   ],
   "outputSpec": [
