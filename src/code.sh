@@ -7,7 +7,7 @@ set -e -x -o pipefail
 dx-download-all-inputs --parallel
 
 #Extract required resources from assets folder into /home/dnanexus/
-dx cat project-Fjj60Qj4yBGvQXbb5Z6FXkgF:file-Fjp4k3Q4yBGZYpQg3bgpPG95 | tar xf - 
+dx cat project-Fkb6Gkj433GVVvj73J7x8KbV:file-Fjp4k3Q4yBGZYpQg3bgpPG95 | tar xf - 
 # ~/hs37d5-fasta.tar -> ~/hs37d5.fa ~from 001 Reference > genomes > b37
 dx cat project-Fkb6Gkj433GVVvj73J7x8KbV:file-Fjp4k3j4yBGpK4x73bzbG2P0 | tar xf - 
 # ~/hs37d5-sdf.tar -> ~/hs37d5.sdf/ ~from 001 Reference > genomes > b37
