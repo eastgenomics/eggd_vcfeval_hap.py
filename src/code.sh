@@ -11,7 +11,7 @@ dx cat project-F3zxk7Q4F30Xp8fG69K1Vppj:file-F403K904F30y2vpVFqxB9kz7 | gunzip
 # ~/hs37d5.fa.gz -> ~/hs37d5.fa ~from publicly available project
 dx cat project-Fkb6Gkj433GVVvj73J7x8KbV:file-Fjp4k3j4yBGpK4x73bzbG2P0 | tar xf - 
 # ~/hs37d5-sdf.tar -> ~/hs37d5.sdf/ ~from 001 Reference > genomes > b37
-dx cat file-Fjp4k484yBGb6XyZKgy4gjgb | tar xf - 
+dx cat project-Fkb6Gkj433GVVvj73J7x8KbV:file-Fjp4k484yBGb6XyZKgy4gjgb | tar xf - 
 # ~/stratification-bed-files-f35a0f7.tar -> ~/bed_files/ ~from 001Refernce > giab > b37 > hg001
 
 #The files-HG001.tsv file is a master file containing relative filepaths to all of the bed files used by hap.py for results stratifcation.
