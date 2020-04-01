@@ -1,7 +1,7 @@
 # vcfeval_hap.py v1.0
 
 ## hap.py version
-v0.3.9 (Docker: https://hub.docker.com/r/pkrusche/hap.py/)
+ Based on moka_guys/vcfeval_hap.py [v0.3.9] (Docker: https://hub.docker.com/r/pkrusche/hap.py/)
 
 
 ## What does this app do?
@@ -55,4 +55,4 @@ This app outputs:
 ## What are the limitations of this app
 * Only works with inputs mapped to GRCh37
 
-## This app was made by Viapath Genome Informatics
+## This app was adapted from Viapath Genome Informatics

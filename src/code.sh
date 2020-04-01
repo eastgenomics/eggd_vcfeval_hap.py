@@ -7,12 +7,15 @@ set -e -x -o pipefail
 dx-download-all-inputs --parallel
 
 #Extract required resources from assets folder into /home/dnanexus/
-dx cat project-Fjj60Qj4yBGvQXbb5Z6FXkgF:file-Fjp4k3Q4yBGZYpQg3bgpPG95 | tar xf - # ~/hs37d5-fasta.tar -> ~/hs37d5.fa
-dx cat project-Fjj60Qj4yBGvQXbb5Z6FXkgF:file-Fjp4k3j4yBGpK4x73bzbG2P0 | tar xf - # ~/hs37d5-sdf.tar -> ~/hs37d5.sdf/
-dx cat file-Fjp4k484yBGb6XyZKgy4gjgb | tar xf - # ~/stratification-bed-files-f35a0f7.tar -> ~/bed_files/
+dx cat project-F3zxk7Q4F30Xp8fG69K1Vppj:file-F403K904F30y2vpVFqxB9kz7 | gunzip -
+# ~/hs37d5.fa.gz -> ~/hs37d5.fa ~from publicly available project
+dx cat project-Fkb6Gkj433GVVvj73J7x8KbV:file-Fjp4k3j4yBGpK4x73bzbG2P0 | tar xf - 
+# ~/hs37d5-sdf.tar -> ~/hs37d5.sdf/ ~from 001 Reference > genomes > b37
+dx cat file-Fjp4k484yBGb6XyZKgy4gjgb | tar xf - 
+# ~/stratification-bed-files-f35a0f7.tar -> ~/bed_files/ ~from 001Refernce > giab > b37 > hg001
 
 #The files-HG001.tsv file is a master file containing relative filepaths to all of the bed files used by hap.py for results stratifcation.
-#files-HG001.tsv must in the parent directory of the bed_files/ directory for relative filepaths to be correct, so copy from /home/dnanexus/bed_files/ > /home/dnanexus/ 
+#files-HG001.tsv must be in the parent directory of the bed_files/ directory for relative filepaths to be correct, so copy from /home/dnanexus/bed_files/ > /home/dnanexus/ 
 cp ./bed_files/files-HG001.tsv ./files-HG001.tsv
 
 #The app accept both uncompressed (.vcf) and gzipped (.vcf.gz) VCF files as input
