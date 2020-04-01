@@ -9,7 +9,7 @@ dx-download-all-inputs --parallel
 #Extract required resources from assets folder into /home/dnanexus/
 dx cat project-Fjj60Qj4yBGvQXbb5Z6FXkgF:file-Fjp4k3Q4yBGZYpQg3bgpPG95 | tar xf - # ~/hs37d5-fasta.tar -> ~/hs37d5.fa
 dx cat project-Fjj60Qj4yBGvQXbb5Z6FXkgF:file-Fjp4k3j4yBGpK4x73bzbG2P0 | tar xf - # ~/hs37d5-sdf.tar -> ~/hs37d5.sdf/
-dx cat project-Fjj60Qj4yBGvQXbb5Z6FXkgF:file-Fjp4k484yBGb6XyZKgy4gjgb | tar xf - # ~/stratification-bed-files-f35a0f7.tar -> ~/bed_files/
+dx cat file-Fjp4k484yBGb6XyZKgy4gjgb | tar xf - # ~/stratification-bed-files-f35a0f7.tar -> ~/bed_files/
 
 #The files-HG001.tsv file is a master file containing relative filepaths to all of the bed files used by hap.py for results stratifcation.
 #files-HG001.tsv must in the parent directory of the bed_files/ directory for relative filepaths to be correct, so copy from /home/dnanexus/bed_files/ > /home/dnanexus/ 
