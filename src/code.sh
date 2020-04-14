@@ -12,7 +12,7 @@ dx cat project-Fkb6Gkj433GVVvj73J7x8KbV:file-Fjp4k3Q4yBGZYpQg3bgpPG95 | tar xf -
 dx cat project-Fkb6Gkj433GVVvj73J7x8KbV:file-Fjp4k3j4yBGpK4x73bzbG2P0 | tar xf - 
 # ~/hs37d5-sdf.tar -> ~/hs37d5.sdf/ ~from 001 Reference > genomes > b37
 dx cat project-Fkb6Gkj433GVVvj73J7x8KbV:file-Fjp4k484yBGb6XyZKgy4gjgb | tar xf - 
-# ~/stratification-bed-files-f35a0f7.tar -> ~/bed_files/ ~from 001Refernce > giab > b37 > hg001
+# ~/stratification-bed-files-f35a0f7.tar -> ~/bed_files/ ~from 001 Reference > giab > b37 > hg001
 
 #The files-HG001.tsv file is a master file containing relative filepaths to all of the bed files used by hap.py for results stratifcation.
 #files-HG001.tsv must be in the parent directory of the bed_files/ directory for relative filepaths to be correct, so copy from /home/dnanexus/bed_files/ > /home/dnanexus/ 
