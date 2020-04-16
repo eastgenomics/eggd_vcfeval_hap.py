@@ -1,5 +1,5 @@
 {
-  "name": "vcfeval_hap.py_v1.0.0",
+  "name": "vcfeval_hap.py_v1.0.1",
   "summary": "v1.0.0 - Use vcfeval and hap.py to calculate NGS performance metrics against truth set (based on precisionFDA app)",
   "properties": {
     "github release": "v1.0.0"
@@ -69,7 +69,7 @@
     "execDepends": [
       {
         "name": "tabix",
-        "version": "0.2.6-2"
+        "version": "1.2.1-2"
       }
     ],
     "systemRequirements": {
