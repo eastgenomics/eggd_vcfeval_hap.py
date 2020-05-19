@@ -1,6 +1,6 @@
-# vcfeval_hap.py v1.0.1
+# vcfeval_hap.py
 
-## hap.py version
+## hap.py
  Based on moka_guys/vcfeval_hap.py [v0.3.9] (Docker: https://hub.docker.com/r/pkrusche/hap.py/)
 
 
